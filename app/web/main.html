@@ -4,23 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=100, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TQAG</title>
     <link rel="stylesheet" href="css/dist/tailwindoutput.css" />
   </head>
   <body>
     <script type="text/javascript" src="/eel.js"></script>
-    <header class="w-full bg-purple-600 h-auto">
-      <h1 class="text-center uppercase font-bold text-5xl py-5 text-white">
+    <header class="w-full bg-pink-600 h-auto">
+      <h1 class="text-center uppercase font-bold text-3xl py-5 text-white shadow-md shadow-pink-300">
         TQAG
       </h1>
-      <div class="">
-        <!-- entradas -->
-        <div class="">
-          
-        </div>
-        <div class=""></div>
-        <div class=""></div>
-      </div>
     </header>
+    <div class="p-5">
+      <!-- entradas -->
+      <nav id="" class="">
+        <ul class="" id="select-content">
+          <li data-option="general" class="mb-2 bg-pink-600 text-white font-bold capitalize shadow-md shadow-pink-300 rounded-lg w-full py-1 px-2 cursor-pointer transform transition-all hover:scale-105 scale-100">general</li>
+          <li data-option="avanced" class="mb-2 bg-pink-600 text-white font-bold capitalize shadow-md shadow-pink-300 rounded-lg w-full py-1 px-2 cursor-pointer transform transition-all hover:scale-105 scale-100">avanced</li>
+          <li data-option="console" class="mb-2 bg-pink-600 text-white font-bold capitalize shadow-md shadow-pink-300 rounded-lg w-full py-1 px-2 cursor-pointer transform transition-all hover:scale-105 scale-100">console</li>
+        </ul>
+      </nav>
+      <!-- general config -->
+      <div data-reloption="general" class="shadow-pink-300 w-full rounded mt-5 shadow-md temporal overflow-hidden h-0">
+        <h3 class=" text-lg text-pink-500 capitalize font-bold mb-5">general</h3>
+        <form action="">
+          <div class="w-full">
+            <label class="block mb-2 text-pink-500 capitalize font-bold" for="location-XfullPath"
+              >Location XfullPath:</label
+            >
+            <input
+              class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
+              type="text"
+              id="ocation-XfullPath"
+              placeholder="//a[1]/div/"
+            />
+          </div>
+          <div class="w-full mt-5">
+            <label class="text-pink-500 block mb-2 capitalize font-bold" for="location-XfullPath"
+              >event:</label
+            >
+            <select
+              class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
+              id="ocation-XfullPath"
+              placeholder="//a[1]/div/"
+            />
+            <option class="bg-white text-pink-500" value="">hola mundo</option>
+          </select>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- aveanced config -->
+      <div data-reloption="avanced" class="shadow-pink-300 w-full rounded mt-5 shadow-md temporal overflow-hidden h-0">
+        <h3 class=" text-lg text-pink-500 capitalize font-bold mb-5">avanced</h3>
+        <form action="">
+          <div class="w-full">
+            <label class="block mb-2 text-pink-500 capitalize font-bold" for="location-XfullPath"
+              >Location XfullPath:</label
+            >
+            <input
+              class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
+              type="text"
+              id="ocation-XfullPath"
+              placeholder="//a[1]/div/"
+            />
+          </div>
+          <div class="w-full mt-5">
+            <label class="text-pink-500 block mb-2 capitalize font-bold" for="location-XfullPath"
+              >event:</label
+            >
+            <select
+              class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
+              id="ocation-XfullPath"
+              placeholder="//a[1]/div/"
+            />
+            <option class="bg-white text-pink-500" value="">hola mundo</option>
+          </select>
+          </div>
+        </form>
+      </div>
+    <!-- console config -->
+    <div data-reloption="console" class="shadow-pink-300 w-full rounded mt-5 shadow-md temporal overflow-hidden h-0">
+      <h3 class=" text-lg text-pink-500 capitalize font-bold mb-5">console</h3>
+      <form action="">
+        <div class="w-full">
+          <label class="block mb-2 text-pink-500 capitalize font-bold" for="location-XfullPath"
+            >Location XfullPath:</label
+          >
+          <input
+            class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
+            type="text"
+            id="ocation-XfullPath"
+            placeholder="//a[1]/div/"
+          />
+        </div>
+        <div class="w-full mt-5">
+          <label class="text-pink-500 block mb-2 capitalize font-bold" for="location-XfullPath"
+            >event:</label
+          >
+          <select
+            class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
+            id="ocation-XfullPath"
+            placeholder="//a[1]/div/"
+          />
+          <option class="bg-white text-pink-500" value="">hola mundo</option>
+        </select>
+        </div>
+      </form>
+    </div>
+  </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

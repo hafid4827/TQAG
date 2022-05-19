@@ -1,0 +1,29 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=100, initial-scale=1.0" />
+  <title>hola</title>
+</head>
+<body>
+  <div class="" id="hola">
+    <span
+      ><div class="" id="anadir" data-hola="" style="display: block">
+        este es el elemento que se pondra en el medio
+      </div></span
+    >hola como nos encontramos el dia de hoy
+  </div>
+  <div class="">arriba deberia de ir el elemento</div>
+  <div class="" id="anadir" data-hola="" style="display: block">
+    este es el elemento que se pondra en el medio
+  </div>
+  <button id="holamundo">hola</button>
+  <script>
+    document.getElementById("holamundo").addEventListener("click", () => {
+      const temporal = document.getElementById("hola");
+      const temporal1 = document.querySelector("[data-hola]");
+      temporal1.style.display = "block";
+      let render = `<span>${temporal1.outerHTML}</span>`;
+      temporal.insertAdjacentHTML("afterbegin", render);
+    });
+  </script>
+</body>

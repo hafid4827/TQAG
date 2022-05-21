@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=100, initial-scale=1.0" />
     <title>TQAG</title>
     <link rel="stylesheet" href="css/dist/tailwindoutput.css" />
+    <!-- bloque a borrar  -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- --------------- -->
+    <script type="text/javascript">
+    </script>
   </head>
   <body>
     <script type="text/javascript" src="/eel.js"></script>
@@ -26,30 +31,34 @@
       <!-- general config -->
       <div data-reloption="general" class="shadow-pink-300 w-full rounded mt-5 shadow-md temporal overflow-hidden h-0">
         <h3 class=" text-lg text-pink-500 capitalize font-bold mb-5">general</h3>
-        <form action="">
+        <form action="" id="caption-form-data">
           <div class="w-full">
             <label class="block mb-2 text-pink-500 capitalize font-bold" for="location-XfullPath"
               >Location XfullPath:</label
             >
             <input
+              name="location-XfullPath"
+              id="location-XfullPath"
               class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
               type="text"
-              id="ocation-XfullPath"
+              id="location-XfullPath"
               placeholder="//a[1]/div/"
             />
           </div>
           <div class="w-full mt-5">
-            <label class="text-pink-500 block mb-2 capitalize font-bold" for="location-XfullPath"
+            <label class="text-pink-500 block mb-2 capitalize font-bold" for="selectLocation-XfullPath"
               >event:</label
             >
             <select
+              name="selectLocation-XfullPath"
               class="w-full block outline-none rounded-sm border-pink-600 py-1 px-2 border-b-2"
-              id="ocation-XfullPath"
+              id="selectLocation-XfullPath"
               placeholder="//a[1]/div/"
             />
-            <option class="bg-white text-pink-500" value="">hola mundo</option>
+            <option class="bg-white text-pink-500" value="hola mundo">hola mundo</option>
           </select>
           </div>
+          <button id="general-button-add" class="py-1 px-3 h-10 block text-white bg-pink-500 shadow-md shadow-pink-300 rounded-lg mt-5 cursor-pointer transform transition-all hover:scale-105 scale-100" type="submit">add</button>
         </form>
       </div>
 
@@ -113,6 +122,6 @@
       </form>
     </div>
   </div>
-    <script src="js/main.js"></script>
+    <script src="js/mainstyles.js"></script>
   </body>
 </html>

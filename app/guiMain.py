@@ -1,7 +1,13 @@
+import selenium
+
 import eel
 eel.init('web')
 """ iria la logica """
 
+
+@eel.expose
+def temporal(rut):
+    print(rut)
 
 
 
